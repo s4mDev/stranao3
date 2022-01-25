@@ -1,0 +1,188 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~sass-rem/rem";
+@import "mixins/utility";
+@import "~slick-slider/slick/slick";
+@import "base/variables";
+@import "base/fonts";
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+@import "components/buttons";
+@import "components/modals";
+@import "components/breadcrumbs";
+@import "components/form";
+@import "layout/header";
+@import "layout/footer";
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: #252525;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.first-sec {
+    position: relative;
+    overflow: hidden;
+    &__item {
+        padding-top: 124px;
+        height: 956px;
+        text-align: center;
+        color: #fff;
+        &-1 {
+            background: url(../../assets/img/banner-bg.jpg) top center no-repeat;
+        }
+        background-size: cover!important;
+        &-subtitle {
+            font-size: 30px;
+            line-height: 80px;
+            letter-spacing: 0.01em;
+            text-shadow: 0px 6.6501px 30px rgba(0, 0, 0, 0.230219);
+            font-family: 'Shnobel', sans-serif;
+            text-transform: uppercase;
+        }
+        &-title {
+            font-size: 200px;
+            font-family: 'Shnobel', sans-serif;
+            line-height: 221px;
+            letter-spacing: 0.01em;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 8px;
+            text-shadow: 0px 14px 48px rgba(0, 0, 0, 0.21), 0px 1.75302px 6.01034px rgba(0, 0, 0, 0.105);
+        }
+        &-txt {
+            font-size: 22px;
+            line-height: 145%;
+            text-shadow: 0px -2px 17px rgba(0, 0, 0, 0.73), 0px -0.250431px 16.494px rgba(0, 0, 0, 0.158031);
+            margin-top: 40px;
+            margin-bottom: 0;
+            font-family: 'Shnobel', sans-serif;
+        }
+        &-buttons {
+            margin-top: 28px;
+            position: relative;
+            z-index: 20;
+        }
+        &-prog {
+            @extend %btn-yel;
+            margin-right: 24px;
+        }
+        &-feedback {
+            @extend %btn-green;
+        }
+    }
+    &__bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 289px;
+        bottom: -48px;
+        background: url(../../assets/img/clouds.png) top center no-repeat;
+        background-size: cover;
+    }
+    &__left {
+        position: absolute;
+        top: 202px;
+        left: 0;
+        &-1 {
+            transition: 1s all;
+        }
+        &-2 {
+            position: absolute;
+            left: 125px;
+            top: 258px;
+            transition: 1s all;
+        }
+        &:hover {
+            .first-sec__left-1 {
+                transform: translateX(-100px);
+            }
+            .first-sec__left-2 {
+                transform: translateX(-150px);
+            }
+        }
+    }
+    &__right {
+        position: absolute;
+        top: 282px;
+        right: 0;
+        &-1 {
+            transition: 1.3s all;
+        }
+        &-2 {
+            position: absolute;
+            right: 125px;
+            top: 158px;
+            transition: 1.3s all;
+        }
+        &:hover {
+            .first-sec__right-1 {
+                transform: translateX(100px);
+            }
+            .first-sec__right-2 {
+                transform: translateX(150px);
+            }
+        }
+    }
+    &__slider {
+        .slick-arrow {
+            position: absolute;
+            font-size: 0;
+            width: 64px;
+            height: 64px;
+            top: 390px;
+            content: '';
+            display: inline-block;
+            background: url(../../assets/img/main-slider-arrow.svg) center no-repeat;
+            z-index: 15;
+        }
+        .slick-prev {
+            left: 96px;
+        }
+        .slick-next {
+            right: 96px;
+            background: url(../../assets/img/main-slider-arrow-next.svg) center no-repeat;
+        }
+    }
+    &__mouse {
+        position: absolute;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-100%);
+        animation: mouse  3s infinite ease-in-out;
+    }
+}
+
+.about {
+    &__title {
+        font-size: 108px;
+        text-align: center;
+        line-height: 100px;
+        color: #72A631;
+        font-family: 'Shnobel', sans-serif;
+        margin-top: 100px;
+        strong {
+            color: #FFC224;
+        }
+    }
+}
+
+
+
+
+
+
+
+@keyframes mouse {
+    from {transform: translateY(0);}
+    50% {transform: translateY(30px);}
+    to {transform: translateY(0);}
+    }
