@@ -138,18 +138,315 @@
 				</svg>															
 			</div>
 		</div>
-		<a href="#" class="first-sec__mouse">
+		<a href="#about" class="first-sec__mouse">
 			<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M19 0C12.0155 0 6.33337 5.67975 6.33337 12.6605V25.3402C6.33337 32.3208 12.0155 38 19 38C25.9846 38 31.6667 32.321 31.6667 25.3402V12.6605C31.6667 5.67975 25.9844 0 19 0ZM30.2593 25.3402C30.2593 31.5449 25.2084 36.5926 19 36.5926C12.7917 36.5926 7.74076 31.5449 7.74076 25.3402V12.6605C7.74076 6.45578 12.7917 1.40739 19 1.40739C25.2084 1.40739 30.2593 6.4556 30.2593 12.6605V25.3402Z" fill="white"/>
 				<path d="M19.0001 4.22217C18.6114 4.22217 18.2963 4.53695 18.2963 4.92595V11.2985C18.2963 11.6875 18.6114 12.0023 19.0001 12.0023C19.3887 12.0023 19.7038 11.6875 19.7038 11.2985V4.92595C19.7037 4.53695 19.3887 4.22217 19.0001 4.22217Z" fill="white"/>
 			</svg>				
 		</a>
     </section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
-			<h2 class="about__title">
+			<h2 class="about__title" data-aos="fade-up" data-aos-duration="1000">
 				Страна ОЗ <strong>- это..</strong>
 			</h2>
+			<div class="about__row">
+				<div class="about__item about__item_1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+					<div class="about__item-image about__image">
+						<img src="<%=require('@img/about-1.svg') %>" alt="" class="about__image-pic">
+						<img src="<%=require('@img/about-shape-1.svg') %>" alt="" class="about__image-shape">
+					</div>
+					<div class="about__item-title">
+						Активность
+					</div>
+					<p class="about__item-txt">
+						«Страна Оз» — это спортивные состязания, творческие мероприятия, кружки <br> и развивающие игры.
+					</p>
+				</div>
+				<div class="about__item about__item_2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+					<div class="about__item-image about__image">
+						<img src="<%=require('@img/about-2.svg') %>" alt="" class="about__image-pic">
+						<img src="<%=require('@img/about-shape-2.svg') %>" alt="" class="about__image-shape">
+					</div>
+					<div class="about__item-title">
+						творчество
+					</div>
+					<p class="about__item-txt">
+						«Страна Оз» — это спортивные состязания, творческие мероприятия, кружки <br> и развивающие игры.
+					</p>
+				</div>
+				<div class="about__item about__item_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+					<div class="about__item-image about__image">
+						<img src="<%=require('@img/about-3.svg') %>" alt="" class="about__image-pic">
+						<img src="<%=require('@img/about-shape-3.svg') %>" alt="" class="about__image-shape">
+					</div>
+					<div class="about__item-title">
+						Путешствия
+					</div>
+					<p class="about__item-txt">
+						«Страна Оз» — это спортивные состязания, творческие мероприятия, кружки <br> и развивающие игры.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="feedback">
+		<div class="container">
+			<div class="feedback__row">
+				<div class="feedback__content">
+					<h2 class="feedback__title">
+						Ищите программу?
+					</h2>
+					<div class="feedback__subtitle">
+						Позвоните нам <a href="tel: 8 (495) 540-56-29" class="feedback__subtitle-link">8 (495) 540-56-29</a>
+					</div>
+					<p class="feedback__txt">
+						Если вы затрудняетесь в выборе программы для своего ребенка, у вас появлились вопросы, мы с радостью поможем вам в выборе и ответим на любые вопросы!
+					</p>
+				</div>
+				<form action="" class="feedback__form">
+					<p class="feedback__form-txt">
+						Вы можете оставить свой номере телефона, <strong>Мы перевзвоним вам в рабочее время</stron>
+					</p>
+					<div class="feedback__form-group">
+						<input type="tel" class="feedback__form-input" placeholder="+ 7 (___) ___ - __ - __">
+						<button type="submit" class="feedback__form-button">заказать обратный звонок</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="feedback__image" data-aos="fade-up-left"><img src="<%=require('@img/feedback-image.svg') %>" alt="" class="feedback__image-pic"></div>
+	</section>
+	<section class="main-txt">
+		<div class="container">
+			<div class="main-txt__row" data-aos="fade-right">
+				<div class="main-txt__image">
+					<img src="<%=require('@img/main-txt-1.png') %>" alt="" class="main-txt__image-pic">
+					<img src="<%=require('@img/main-txt-shape-1.svg') %>" alt="" class="main-txt__image-shape main-txt__image-shape_1">
+				</div>
+				<div class="main-txt__content">
+					<img src="<%=require('@img/main-txt-shape-3.svg') %>" alt="" class="main-txt__content-shape main-txt__content-shape_1">
+					<div class="main-txt__content-wrapper">
+						<h2 class="main-txt__title">
+							Детский лагерь на <br> <strong>школьные каникулы</stron>
+						</h2>
+						<p class="main-txt__txt">
+							Мы предлагаем вашему ребенку на 14 дней забыть о компьютерах, телевизорах и видеоиграх и отправиться в увлекательный мир живого общения, спорта, захватывающих приключений и игр. 
+						</p>
+						<p class="main-txt__txt">
+							«Страна Оз» — это спортивные состязания, творческие мероприятия, кружки и развивающие игры. 14 дней в обществе команды лидеров, круглосуточно занимающихся развитием и организацией отдыха вашего ребенка. 
+						</p>
+						<a href="" class="main-txt__button main-txt__button_green">Для родителей</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="main-txt__row" data-aos="fade-left">
+				<div class="main-txt__content">
+					<img src="<%=require('@img/main-txt-shape-4.svg') %>" alt="" class="main-txt__content-shape main-txt__content-shape_2">
+					<div class="main-txt__content-wrapper">
+						<h2 class="main-txt__title">
+							Что такое <strong>СТРАНА ОЗ</strong>
+						</h2>
+						<p class="main-txt__txt">
+							Летний лагерь для детей в Подмосковье «Страна Оз» — это не только расположение в экологически чистом Коломенском районе и прекрасная инфраструктура парк-отеля «Олимп», но и хорошо продуманная программа для детей любого возраста и профессиональная команда вожатых! 
+						</p>
+						<p class="main-txt__txt">
+							Мы приглашаем мальчишек и девчонок 7-15 лет отправится в увлекательное путешествие вместе с жителями волшебной страны!
+						</p>
+						<a href="" class="main-txt__button main-txt__button_yel">Выбрать программу</a>
+					</div>
+				</div>
+				<div class="main-txt__image">
+					<img src="<%=require('@img/main-txt-2.png') %>" alt="" class="main-txt__image-pic">
+					<img src="<%=require('@img/main-txt-shape-2.svg') %>" alt="" class="main-txt__image-shape main-txt__image-shape_2">
+				</div>
+			</div>
+
+
+
+			<div class="main-txt__row" data-aos="fade-right">
+				<div class="main-txt__image">
+					<img src="<%=require('@img/main-txt-3.png') %>" alt="" class="main-txt__image-pic">
+					<img src="<%=require('@img/main-txt-shape-3.svg') %>" alt="" class="main-txt__content-shape main-txt__content-shape_1">
+				</div>
+				<div class="main-txt__content">
+					<img src="<%=require('@img/main-txt-shape-3.svg') %>" alt="" class="main-txt__content-shape main-txt__content-shape_1">
+					<div class="main-txt__content-wrapper">
+						<h2 class="main-txt__title">
+							в <strong>«Страна Оз»</strong> работает профессиональная <strong>команда</strong>
+						</h2>
+						<p class="main-txt__txt">
+							Мы предлагаем вашему ребенку на 14 дней забыть о компьютерах, телевизорах и видеоиграх и отправиться в увлекательный мир живого общения, спорта, захватывающих приключений и игр. 
+						</p>
+						<p class="main-txt__txt">
+							«Страна Оз» — это спортивные состязания, творческие мероприятия, кружки и развивающие игры. 14 дней в обществе команды лидеров, круглосуточно занимающихся развитием и организацией отдыха вашего ребенка. 
+						</p>
+						<a href="" class="main-txt__button main-txt__button_green">наша команда</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="container">
+			<div class="reviews__header">
+				<h2 class="reviews__title">
+					Отзывы
+				</h2>
+				<p class="reviews__txt">
+					Мы стараемся оставить самые теплые эмоции, раскрыть творческие стороны каждого из ребят
+				</p>
+			</div>
+			<div class="reviews__row">
+				<div class="reviews__content">
+					<div class="reviews__slider">
+						<div class="reviews__review">
+							<div class="reviews__review-quotes">
+								<img src="<%=require('@img/top-quotes.svg') %>" alt="">
+							</div>
+							<div class="reviews__review-name">
+								Ирина Романова
+							</div>
+							<div class="reviews__review-title">
+								Огромная Вам, вожатые, благодарность!
+							</div>
+							<p class="reviews__review-txt">
+								У нас это была первая поездка в лагерь! Спасибо за заботу и поддержку) Вы - профессионалы своего дела и добрый душевные люди! Ребята, спасибо огромное вам. Дети довольны, а это самое главное. Выдарите им волшебные эмоции, дружбу - это самое ценное!!!
+							</p>
+						</div>
+						<div class="reviews__review">
+							<div class="reviews__review-quotes">
+								<img src="<%=require('@img/top-quotes.svg') %>" alt="">
+							</div>
+							<div class="reviews__review-name">
+								Ирина Романова
+							</div>
+							<div class="reviews__review-title">
+								Огромная Вам, вожатые, благодарность!
+							</div>
+							<p class="reviews__review-txt">
+								У нас это была первая поездка в лагерь! Спасибо за заботу и поддержку) Вы - профессионалы своего дела и добрый душевные люди! Ребята, спасибо огромное вам. Дети довольны, а это самое главное. Выдарите им волшебные эмоции, дружбу - это самое ценное!!!
+							</p>
+						</div>
+					</div>
+					<a href="" class="reviews__button">
+						Все отзывы
+					</a>
+				</div>
+				<div class="reviews__compose" data-aos="fade-left" data-aos-duration="1000">
+					<img src="<%=require('@img/review-1.png') %>" alt="" class="reviews__compose-item reviews__compose-item_1">
+					<img src="<%=require('@img/review-2.png') %>" alt="" class="reviews__compose-item reviews__compose-item_2">
+					<img src="<%=require('@img/review-3.png') %>" alt="" class="reviews__compose-item reviews__compose-item_3">
+					<img src="<%=require('@img/review-4.png') %>" alt="" class="reviews__compose-item reviews__compose-item_4">
+					<a href="" class="reviews__compose-link">
+						<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.54012 1.6377L1.29407 1.89529L6.2139 7.04946L1.29407 12.2036L1.54012 12.4612L6.70583 7.04946L1.54012 1.6377Z" fill="white" stroke="white" stroke-width="1.4" stroke-linejoin="round"/>
+						</svg>							
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="qa">
+		<div class="container">
+			<img src="<%=require('@img/dog.png') %>" alt="" class="qa__image" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500">
+			<div class="qa__wrapper">
+				<h2 class="qa__title">
+					Вопросы-ответы
+				</h2>
+				<div class="qa__accord-block">
+					<div class="qa__accord">
+						<div class="qa__accord-header">
+							Как осуществляется проезд в лагерь?
+							<div class="qa__accord-btn">
+								<div class="qa__accord-open">
+									<span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="qa__accord-body qa-body">
+							<div class="qa-body__wrapper">
+								<p class="qa-body__txt">
+									Территория огорожена забором, есть 2 пункта КПП, охрана проводит обход территории согласно своему графику.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="qa__accord">
+						<div class="qa__accord-header qa__accord-header_open">
+							Как организовано медицинское обеспечение детей?
+							<div class="qa__accord-btn">
+								<div class="qa__accord-open">
+									<span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="qa__accord-body qa-body">
+							<div class="qa-body__wrapper">
+								<p class="qa-body__txt">
+									Территория огорожена забором, есть 2 пункта КПП, охрана проводит обход территории согласно своему графику.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="qa__accord">
+						<div class="qa__accord-header">
+							Чем дети занимаются в свободное время?
+							<div class="qa__accord-btn">
+								<div class="qa__accord-open">
+									<span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="qa__accord-body qa-body">
+							<div class="qa-body__wrapper">
+								<p class="qa-body__txt">
+									Территория огорожена забором, есть 2 пункта КПП, охрана проводит обход территории согласно своему графику.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="qa__accord">
+						<div class="qa__accord-header">
+							На какие экскурсии поедут дети?
+							<div class="qa__accord-btn">
+								<div class="qa__accord-open">
+									<span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="qa__accord-body qa-body">
+							<div class="qa-body__wrapper">
+								<p class="qa-body__txt">
+									Территория огорожена забором, есть 2 пункта КПП, охрана проводит обход территории согласно своему графику.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="qa__accord">
+						<div class="qa__accord-header">
+							Сколько человек проживает в одной комнате?
+							<div class="qa__accord-btn">
+								<div class="qa__accord-open">
+									<span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="qa__accord-body qa-body">
+							<div class="qa-body__wrapper">
+								<p class="qa-body__txt">
+									Территория огорожена забором, есть 2 пункта КПП, охрана проводит обход территории согласно своему графику.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="" class="qa__btn">
+					Больше важных вопросов
+				</a>
+			</div>
 		</div>
 	</section>
   </main>

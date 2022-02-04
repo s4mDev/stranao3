@@ -1,7 +1,37 @@
 .breadcrumbs {
-    &__list {
-        @include unlist;
-        display: flex;
-        align-items: center;
+    &__item {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 157%;
+        color: rgba(37, 37, 37, 0.4);
+        text-decoration: none;
+        transition: .3s all;
+        display: inline-block;
+        margin-right: 21px;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: #72A631;
+            position: absolute;
+            right: -16px;
+            top: 8px;
+            border-radius: 50%;
+        }
+        &:hover {
+            color: #72A631;
+            text-decoration: underline;
+        }
+        &_current {
+            color: #72A631;
+            &::after {
+                display: none;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 }

@@ -1,0 +1,417 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+<main class="innerpage" id="root">
+    <section class="innerpage-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__item">
+                    Главная
+                </a>
+                <span class="breadcrumbs__item breadcrumbs__item_current">
+                    Детский лагерь «Страна ОЗ» в Подмосковье
+                </span>
+            </div>
+            <h1 class="innerpage__title">
+                Тематические смены
+            </h1>
+        </div>
+    </section>
+    <section class="programm">
+        <div class="container">
+            <div class="programm__item">
+                <div class="programm__row">
+                    <div class="programm__image">
+                        <img src="<%=require('@img/programm-1.png') %>" alt="" class="programm__image-pic">
+                    </div>
+                    <div class="programm__content">
+                        <h3 class="programm__content-title">
+                            «Вот такая вечеринка!»
+                        </h3>
+                        <p class="programm__content-txt">
+                            За все годы существования нашего лагеря, а это между прочим уже больше 10 лет, мы ни разу не отмечали вместе Новый Год. Это же замечательный семейный праздник. А кто мы, если не самая настоящая семья?! У нас возникла супер идея собрать всех и вместе отпраздновать этот Новый год. Пусть именно в этом году он будет особенным. 
+                        </p>
+                        <p class="programm__content-txt">
+                            Планы грандиозные: новогодний праздничный ужин, мастер-классы, Дед Мороз <br> и Снегурочка, подарки, ночная дискотека, салют! И всё это в окружении близких людей и друзей:) Как тебе наша идея? Зови своих друзей, собирай чемодан, обязательно узнай у мамы рецепт Оливье и не забудь подумать, какое желание загадать под бой курантов:)
+                        </p>
+                    </div>
+                </div>
+                <div class="programm__bottom">
+                    <div class="programm__date">
+                        <div class="programm__date-title">
+                            Время проведения:
+                        </div>
+                        <div class="programm__date-info">
+                            30 декабря 2021 - 2 января 2022 
+                        </div>
+                    </div>
+                    <div class="programm__place">
+                        <div class="programm__place-title">
+                            Место проведения:
+                        </div>
+                        <div class="programm__place-info">
+                            парк-отель «Олимп»
+                        </div>
+                    </div>
+                    <div class="programm__free">
+                        <div class="programm__free-title">
+                            Свободных мест:
+                        </div>
+                        <div class="programm__free-info">
+                            12
+                        </div>
+                    </div>
+                    <div class="programm__price">
+                        <div class="programm__price-title">
+                            Стоимость путевки:
+                        </div>
+                        <div class="programm__price-info">
+                            15 000 ₽
+                        </div>
+                    </div>
+                    <button class="programm__button">
+                        Отправить заявку
+                    </button>
+                </div>
+            </div>
+            <div class="programm__item">
+                <div class="programm__row">
+                    <div class="programm__image">
+                        <img src="<%=require('@img/programm-2.png') %>" alt="" class="programm__image-pic">
+                    </div>
+                    <div class="programm__content">
+                        <h3 class="programm__content-title">
+                            «Мистер Х - похититель Рождества»
+                        </h3>
+                        <p class="programm__content-txt">
+                            Все наши зимние смены обладают особой атмосферой праздника и волшебства. И эта <br> смена не была бы исключением, если бы кто-то не похитил Рождество. По прибытию в лагерь все ребята становятся современными Шерлоками и Ватсонами, так как им предстоит распутать цепочку удивительных происшествий, собрать необходимые улики и разгадать.. кто же этот нехороший мистер Х? 
+                        </p>
+                        <p class="programm__content-txt">
+                            Блокноты, ручки, лупа, микроскоп.. что еще может понадобиться юным сыщикам <br> и детективам? Конечно, это друзья, на которых можно положиться в трудную минуту! <br> До встречи 2 января!
+                        </p>
+                    </div>
+                </div>
+                <div class="programm__bottom">
+                    <div class="programm__date">
+                        <div class="programm__date-title">
+                            Время проведения:
+                        </div>
+                        <div class="programm__date-info">
+                            2-8 января 2022 
+                        </div>
+                    </div>
+                    <div class="programm__place">
+                        <div class="programm__place-title">
+                            Место проведения:
+                        </div>
+                        <div class="programm__place-info">
+                            парк-отель «Олимп»
+                        </div>
+                    </div>
+                    <div class="programm__free">
+                        <div class="programm__free-title">
+                            Свободных мест:
+                        </div>
+                        <div class="programm__free-info">
+                            12
+                        </div>
+                    </div>
+                    <div class="programm__price">
+                        <div class="programm__price-title">
+                            Стоимость путевки:
+                        </div>
+                        <div class="programm__price-info">
+                            15 000 ₽
+                        </div>
+                    </div>
+                    <button class="programm__button">
+                        Отправить заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-place">
+        <div class="container">
+            <h2 class="about-place__title">
+                Лагерь “Страна ОЗ”
+            </h2>
+            <ul class="about-place__nav">
+                <li class="about-place__nav-item">
+                    <a href="#" class="about-place__nav-link about-place__nav-link_active">
+                        Краткое описание 
+                    </a>
+                </li>
+                <li class="about-place__nav-item">
+                    <a href="#" class="about-place__nav-link">
+                        Расположение
+                    </a>
+                </li>
+                <li class="about-place__nav-item">
+                    <a href="#" class="about-place__nav-link">
+                        Размещение
+                    </a>
+                </li>
+                <li class="about-place__nav-item">
+                    <a href="#" class="about-place__nav-link">
+                        Питание
+                    </a>
+                </li>
+                <li class="about-place__nav-item">
+                    <a href="#" class="about-place__nav-link">
+                        Трансфер
+                    </a>
+                </li>
+                <li class="about-place__nav-item">
+                    <a href="#" class="about-place__nav-link">
+                        Разрешения и лицензия
+                    </a>
+                </li>
+            </ul>
+            <div class="about-place__block">
+                <div class="about-place__left">
+                    <img src="<%=require('@img/left-line.svg') %>" alt="" class="about-place__left-line">
+                    <img src="<%=require('@img/left-circles.svg') %>" alt="" class="about-place__left-circles">
+                </div>
+                <div class="about-place__right">
+                    <img src="<%=require('@img/right-line.svg') %>" alt="" class="about-place__right-line">
+                    <img src="<%=require('@img/right-circles.svg') %>" alt="" class="about-place__right-circles">
+                </div>
+                <div class="about-place__wrapper">
+                    <div class="about-place__gallery">
+                        <div class="about-place__gallery-item">
+                            <img src="<%=require('@img/programm-galery-1.jpg') %>" alt="" class="about-place__gallery-img">
+                        </div>
+                        <div class="about-place__gallery-item">
+                            <img src="<%=require('@img/programm-galery-2.jpg') %>" alt="" class="about-place__gallery-img">
+                        </div>
+                        <div class="about-place__gallery-item">
+                            <img src="<%=require('@img/programm-galery-3.jpg') %>" alt="" class="about-place__gallery-img">
+                        </div>
+                        <div class="about-place__gallery-item">
+                            <img src="<%=require('@img/programm-galery-4.jpg') %>" alt="" class="about-place__gallery-img">
+                        </div>
+                        <div class="about-place__gallery-item">
+                            <img src="<%=require('@img/programm-galery-1.jpg') %>" alt="" class="about-place__gallery-img">
+                        </div>
+                        <div class="about-place__gallery-item">
+                            <img src="<%=require('@img/programm-galery-2.jpg') %>" alt="" class="about-place__gallery-img">
+                        </div>
+                    </div>
+                    <div class="about-place__group-wrapper">
+                        <div class="about-place__group">
+                            <div class="about-place__group-title">
+                                <i class="about-place__group-icon">
+                                    <img src="<%=require('@img/about-place-i-1.png') %>" alt="">
+                                </i>
+                                Расположение
+                            </div>
+                            <p class="about-place__group-txt">
+                                Детский лагерь «Страна Оз» расположен на территории парк-отеля «Олимп» в Коломенском районе Подмосковья. Территория известна своей современной инфраструктурой, сосновым лесом, живописной речкой и отсутствием проездных дорог. Комплекс огорожен забором и круглосуточно охраняется. Въезд на территорию осуществляется по списку.
+                            </p>
+                            <div class="about-place__group-subtitle">
+                                Месторасположение:
+                            </div>
+                            <div class="about-place__group-strong">
+                                120 км от МКАД, юго-восточное направление
+                            </div>
+                            <div class="about-place__cards">
+                                <div class="about-place__cards-item">
+                                    <div class="about-place__cards-image">
+                                        <img src="<%=require('@img/about-place-image-card-1.jpg') %>" alt="">
+                                    </div>
+                                    <div class="about-place__cards-title">
+                                        Спортивные площадки
+                                    </div>
+                                </div>
+                                <div class="about-place__cards-item">
+                                    <div class="about-place__cards-image">
+                                        <img src="<%=require('@img/about-place-image-card-2.jpg') %>" alt="">
+                                    </div>
+                                    <div class="about-place__cards-title">
+                                        Бассейн
+                                    </div>
+                                </div>
+                                <div class="about-place__cards-item">
+                                    <div class="about-place__cards-image">
+                                        <img src="<%=require('@img/about-place-image-card-3.jpg') %>" alt="">
+                                    </div>
+                                    <div class="about-place__cards-title">
+                                        Главный корпус
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-place__group">
+                            <div class="about-place__group-title">
+                                <i class="about-place__group-icon">
+                                    <img src="<%=require('@img/about-place-i-2.png') %>" alt="">
+                                </i>
+                                Трансфер
+                            </div>
+                            <p class="about-place__group-txt">
+                                Сбор детей в лагерь осуществляется возле <strong>ст. м. Царицыно.</stron> <br> Информацию по отъезду, а также список вещей мы отправляем на почту за две недели до начала смены.
+                            </p>
+                        </div>
+                        <div class="about-place__group">
+                            <div class="about-place__group-title">
+                                <i class="about-place__group-icon">
+                                    <img src="<%=require('@img/about-place-i-3.png') %>" alt="">
+                                </i>
+                                Размещение
+                            </div>
+                            <p class="about-place__group-txt">
+                                На территории парк-отеля «Олимп» в период осенних/весенних смен в Главном корпусе, в период зимней - в Молодежном Центре, в период летних - в Спортивном корпусе. Дети расселяются по возрастному и половому признаку. В нашем распоряжении есть: однокомнатные номера с удобствами (санузел и душ). Во всех номерах — прихожая, 3-5 спальных места (3-5 кровати, шкаф, тумбочки). В холле — кулер с питьевой водой.
+                            </p>
+                            <div class="about-place__cards">
+                                <div class="about-place__cards-item">
+                                    <div class="about-place__cards-image">
+                                        <img src="<%=require('@img/about-place-image-card-1.jpg') %>" alt="">
+                                    </div>
+                                </div>
+                                <div class="about-place__cards-item">
+                                    <div class="about-place__cards-image">
+                                        <img src="<%=require('@img/about-place-image-card-2.jpg') %>" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-place__group">
+                            <div class="about-place__group-title">
+                                <i class="about-place__group-icon">
+                                    <img src="<%=require('@img/about-place-i-4.png') %>" alt="">
+                                </i>
+                                Питание
+                            </div>
+                            <p class="about-place__group-txt">
+                                Для детей в нашем лагере организовано пятиразовое питание. Меню соответствует требованиям СанПин 2.4.4.3155-13 «Санитарно-эпидемиологические <br> требования к устройству, содержанию и организации работы стационарных организаций отдыха и оздоровления детей» (с изменениями на 22.03.2017).
+                            </p>
+                            <p class="about-place__group-txt">
+                                Завтрак, обед и ужин — <strong>по системе «шведский стол»</strong> (вся шведская линия находится за стеклом, накладывают еду сотрудники столовой); <br>
+                                полдник и пятое питание — <strong>порционное.</strong>
+                            </p>
+                        </div>
+                        <div class="about-place__group">
+                            <div class="about-place__group-title">
+                                <i class="about-place__group-icon">
+                                    <img src="<%=require('@img/about-place-i-5.png') %>" alt="">
+                                </i>
+                                Разрешения и лицензия
+                            </div>
+                            <p class="about-place__group-txt">
+                                Детский лагерь «Страна Оз» получает разрешение Роспотребнадзора и МЧС на проведение каникулярных смен на территории парк-отеля «Олимп», а также информирует об этом Администрацию Коломенского района и другие организации, которые отвечают за контроль над детскими лагерями Московской области. Детский лагерь «Страна Оз» входит в <a href="#">Реестр детских лагерей Московской области.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="get get_programms">
+        <div class="container">
+            <div class="get__row">
+                <div class="get__content">
+                    <h2 class="get__title">
+                        Оставить заявку на смену
+                    </h2>
+                    <p class="get__txt">
+                        Если вы затрудняетесь в выборе программы для своего ребенка, у вас появлились вопросы, мы с радостью поможем вам в выборе и ответим на любые вопросы!
+                    </p>
+                    <form action="#" class="get__form">
+                        <div class="get__form-row">
+                            <div class="get__form-group">
+                                <input type="text" class="get__form-control get__form-control_name" placeholder="Ваше имя">
+                            </div>
+                            <div class="get__form-group">
+                                <input type="text" class="get__form-control get__form-control_phone" placeholder="+ 7 (___) ___ - __ - __">
+                            </div>
+                            <div class="get__form-group">
+                                <button type="submit" class="get__form-submit">
+                                    Отправить заявку
+                                </button>
+                            </div>
+                        </div>
+                        <div class="get__form-agree">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">
+                                При нажатии на кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="get__contacts">
+                    <div class="get__contacts-top">
+                        Позвоните нам <a href="tel:8 (495) 540-56-29">8 (495) 540-56-29</a>
+                    </div>
+                    <div class="get__contacts-txt">
+                        Если вы затрудняетесь в выборе программы, <span>подберем вашему ребенку подходящую смену</spa>
+                    </div>
+                </div>
+                <div class="get__image">
+                    <img src="<%=require('@img/get-programms.svg') %>" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews reviews_programms">
+		<div class="container">
+			<div class="reviews__header">
+				<h2 class="reviews__title">
+					Отзывы
+				</h2>
+				<p class="reviews__txt">
+					Мы стараемся оставить самые теплые эмоции, раскрыть творческие стороны каждого из ребят
+				</p>
+			</div>
+			<div class="reviews__row">
+				<div class="reviews__content">
+					<div class="reviews__slider">
+						<div class="reviews__review">
+							<div class="reviews__review-quotes">
+								<img src="<%=require('@img/top-quotes.svg') %>" alt="">
+							</div>
+							<div class="reviews__review-name">
+								Ирина Романова
+							</div>
+							<div class="reviews__review-title">
+								Огромная Вам, вожатые, благодарность!
+							</div>
+							<p class="reviews__review-txt">
+								У нас это была первая поездка в лагерь! Спасибо за заботу и поддержку) Вы - профессионалы своего дела и добрый душевные люди! Ребята, спасибо огромное вам. Дети довольны, а это самое главное. Выдарите им волшебные эмоции, дружбу - это самое ценное!!!
+							</p>
+						</div>
+						<div class="reviews__review">
+							<div class="reviews__review-quotes">
+								<img src="<%=require('@img/top-quotes.svg') %>" alt="">
+							</div>
+							<div class="reviews__review-name">
+								Ирина Романова
+							</div>
+							<div class="reviews__review-title">
+								Огромная Вам, вожатые, благодарность!
+							</div>
+							<p class="reviews__review-txt">
+								У нас это была первая поездка в лагерь! Спасибо за заботу и поддержку) Вы - профессионалы своего дела и добрый душевные люди! Ребята, спасибо огромное вам. Дети довольны, а это самое главное. Выдарите им волшебные эмоции, дружбу - это самое ценное!!!
+							</p>
+						</div>
+					</div>
+					<a href="" class="reviews__button">
+						Все отзывы
+					</a>
+				</div>
+				<div class="reviews__compose" data-aos="fade-left" data-aos-duration="1000">
+					<img src="<%=require('@img/review-1.png') %>" alt="" class="reviews__compose-item reviews__compose-item_1">
+					<img src="<%=require('@img/review-2.png') %>" alt="" class="reviews__compose-item reviews__compose-item_2">
+					<img src="<%=require('@img/review-3.png') %>" alt="" class="reviews__compose-item reviews__compose-item_3">
+					<img src="<%=require('@img/review-4.png') %>" alt="" class="reviews__compose-item reviews__compose-item_4">
+					<a href="" class="reviews__compose-link">
+						<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.54012 1.6377L1.29407 1.89529L6.2139 7.04946L1.29407 12.2036L1.54012 12.4612L6.70583 7.04946L1.54012 1.6377Z" fill="white" stroke="white" stroke-width="1.4" stroke-linejoin="round"/>
+						</svg>							
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<%= require('@parts/footer.ejs')() %>

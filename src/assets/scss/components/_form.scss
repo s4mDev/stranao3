@@ -3,3 +3,30 @@
        margin-bottom: rem(20px);
     }
 }
+
+%checkbox {
+    label {
+        padding-left: 28px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: rgba(114, 166, 49, 0.12);
+            border-radius: 2px;
+            display: inline-block;
+            position: absolute;
+            cursor: pointer;
+            left: 0;
+            top: 1px;
+        }
+    }
+    input {
+        display: none;
+        &:checked {
+            & + label::before {
+                background: rgba(114, 166, 49, 0.12) url(../../assets/img/checked.svg) center no-repeat;
+            }
+        }
+    }
+}

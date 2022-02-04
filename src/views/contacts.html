@@ -1,0 +1,180 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+<main class="innerpage" id="root">
+    <section class="innerpage-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__item">
+                    Главная
+                </a>
+                <span class="breadcrumbs__item breadcrumbs__item_current">
+                    Расписание и стоимость
+                </span>
+            </div>
+            <div class="innerpage__row">
+                <h1 class="innerpage__title">
+                    Наши контакты
+                </h1>
+                <p class="innerpage__descr">
+                    Ответы на все вопросы, касающиеся приобретения путёвок в детский лагерь «Страна Оз», нашей программы или сотрудничества, вы можете получить здесь:
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__row">
+                <div class="contacts__item">
+                    <div class="contacts__icon">
+                        <img src="<%=require('@img/contacts-1.png') %>" alt="">
+                    </div>
+                    <div class="contacts__title">
+                        По телефону:
+                    </div>
+                    <div class="contacts__group">
+                        <a href="tel:8 (495) 540-56-20" class="contacts__link">8 (495) 540-56-20</a>
+                        <div class="contacts__descr">
+                            Общая информация о лагере, сменах и стоимости, вохможность оформить заявку на приобретение путевки
+                        </div>
+                    </div>
+                    <div class="contacts__group">
+                        <a href="tel:8 (985) 268-31-19" class="contacts__link">8 (985) 268-31-19</a>
+                        <div class="contacts__descr">
+                            Анна (WhatsApp)
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__item">
+                    <div class="contacts__icon">
+                        <img src="<%=require('@img/contacts-2.png') %>" alt="">
+                    </div>
+                    <div class="contacts__title">
+                        По электронной почте:
+                    </div>
+                    <div class="contacts__group">
+                        <a href="mailto:sokolovauu@stranao3.ru" class="contacts__link contacts__link_mail">sokolovauu@stranao3.ru</a>
+                        <div class="contacts__descr">
+                            Электронная почта генерального директора ООО «Страна Оз» Соколовой Юлии Юрьевны
+                        </div>
+                    </div>
+                    <div class="contacts__group">
+                        <a href="mailto:putevka@stranao3.ru" class="contacts__link contacts__link_mail">putevka@stranao3.ru</a>
+                        <div class="contacts__descr">
+                            Отдел продаж
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-header">
+        <div class="container">
+            <h2 class="contacts-header__title">
+                У нас круто
+            </h2>
+        </div>
+    </section>
+    <section class="consult">
+        <div class="container">
+            <div class="consult__row">
+                <div class="consult__content">
+                    <h2 class="consult__title">
+                        Консультация по любым вопросам
+                    </h2>
+                    <p class="consult__txt">
+                        Уважаемые родители, во внерабочие часы вы можете написать сообщение на нашу электронную почту <a href="mailto: putevka@stranao3.ru">putevka@stranao3.ru</a> или Whats App.
+                    </p>
+                </div>
+                <div class="consult__btn-wrapper">
+                    <a href="" class="consult__btn">
+                        <img src="<%=require('@img/consult-icon.png') %>" alt="">
+                        Написать сообщение
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-info">
+        <div class="container">
+            <div class="contacts-info__row">
+                <div class="contacts-info__content">
+                    <div class="contacts-info__content-title">
+                        Наши реквизиты
+                    </div>
+                    <div class="contacts-info__content-item">
+                        ООО «Страна Оз»
+                    </div>
+                    <div class="contacts-info__content-item">
+                        Юридический адрес: 123154, город Москва, бульвар Генерала Карбышева, дом 5, корпус 2, помещение I, 1 этаж
+                    </div>
+                    <div class="contacts-info__content-item">
+                        ИНН/КПП: 7734674750/773401001
+                    </div>
+                    <div class="contacts-info__content-item">
+                        ОГРН: 1127746137034
+                    </div>
+
+                    <div class="contacts-info__content-subtitle">
+                        Банковские реквизиты:
+                    </div>
+                    
+                    <div class="contacts-info__content-item">
+                        Р/с № 40702810700000053878
+                    </div>
+                    <div class="contacts-info__content-item">
+                        Филиал №7701 Банка ВТБ 24 (ПАО)
+                    </div>
+                    <div class="contacts-info__content-item">
+                        к/с 30101810345250000745
+                    </div>
+                    <div class="contacts-info__content-item">
+                        В ОПЕРУ МОСКОВСКОГО ГТУ БАНКА РОССИИ
+                    </div>
+                    <div class="contacts-info__content-item">
+                        БИК 044525745
+                    </div>
+                </div>
+                <div class="contacts-info__rulers contacts-rulers">
+                    <h2 class="contacts-rulers__title">
+                        Руководство лагеря
+                    </h2>
+                    <div class="contacts-rulers__item">
+                        <div class="contacts-rulers__image">
+                            <img src="<%=require('@img/contacts-avatar-bg.svg') %>" class="contacts-rulers__image-bg" alt="">
+                            <img src="<%=require('@img/contacts-avatar-1.png') %>" class="contacts-rulers__image-image" alt="">
+                        </div>
+                        <div class="contacts-rulers__content">
+                            <div class="contacts-rulers__item-title">
+                                Соколова Юлия Юрьевна
+                            </div>
+                            <div class="contacts-rulers__item-descr">
+                                Генеральный директор ООО "Страна Оз"
+                            </div>
+                            <a href="tel:8 (925) 062-24-29" class="contacts-rulers__item-link">8 (925) 062-24-29</a>
+                        </div>
+                    </div>
+                    <div class="contacts-rulers__item">
+                        <div class="contacts-rulers__image">
+                            <img src="<%=require('@img/contacts-avatar-bg.svg') %>" class="contacts-rulers__image-bg" alt="">
+                            <img src="<%=require('@img/contacts-avatar-2.png') %>" class="contacts-rulers__image-image" alt="">
+                        </div>
+                        <div class="contacts-rulers__content">
+                            <div class="contacts-rulers__item-title">
+                                Силина Евгения Сергеевна
+                            </div>
+                            <div class="contacts-rulers__item-descr">
+                                Директор лагеря "Страна Оз"
+                            </div>
+                            <a href="tel:8 (916) 388-74-74" class="contacts-rulers__item-link">8 (916) 388-74-74</a>
+                        </div>
+                    </div>
+                    <a href="" class="contacts-rulers__button">
+                        Вся команда
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= require('@parts/footer.ejs')() %>
