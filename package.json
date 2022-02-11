@@ -16,6 +16,8 @@
     "bootstrap": "^5.1.3",
     "fancybox": "^3.0.1",
     "imagemin-svgo": "^10.0.0",
+    "jquery.maskedinput": "^1.4.1",
+    "magnific-popup": "^1.1.0",
     "rucksack-css": "^1.0.2",
     "slick-slider": "^1.8.2"
   },

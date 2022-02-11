@@ -44,3 +44,58 @@
         }
     }
 }
+
+.backdrop {
+    background: rgba(31, 31, 31, 0.7);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    left: -200vw;
+    opacity: 0;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    transition: .3s opacity;
+}
+
+.offer-popup {
+    position: fixed;
+    left: 50%;
+    display: none;
+    top: 240px;
+    transform: translateX(-50%);
+    width: 1084px;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0px 6px 50px rgba(54, 58, 61, 0.1);
+    border-radius: 16px;
+    .reg__form {
+        max-width: 846px;
+        background: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 72px;
+        padding-bottom: 84px;
+        &-title {
+            text-align: center;
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 48px;
+        top: 48px;
+        cursor: pointer;
+    }
+}
+
+.open-offer {
+    .backdrop {
+        left: 0;
+        opacity: 1;
+    }
+    .offer-popup {
+        display: block;
+    }
+}
