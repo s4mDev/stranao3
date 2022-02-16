@@ -21,7 +21,7 @@
             <div class="qa-page__row">
                 <div class="qa-page__content reg-page__content reg">
                     <div class="reg__wrapper">
-                        <div class="reg__block" id="reg-1">
+                        <div class="reg__block js-regBlock" id="reg-1">
                             <p>
                                 Вы уже определились с датами, пообщались с директором или менеджером по продажам? Тогда самое время выбрать <strong>способ приобретения путевки.</strong> 
                             </p>
@@ -61,7 +61,7 @@
                                 Перейти к оформлению
                             </a>
                         </div>
-                        <div class="reg__block" id="reg-2">
+                        <div class="reg__block js-regBlock" id="reg-2">
                             <h2>
                                 Оплата путёвки банковской картой
                             </h2>
@@ -119,7 +119,7 @@
                                 Осуществляется согласно пунктам <a href="#">договора 6.7-6.10</a> на расчетный счет заявителя.
                             </p>
                         </div>
-                        <div class="reg__block" id="reg-3">
+                        <div class="reg__block js-regBlock" id="reg-3">
                             <h2>
                                 Реквизиты огранизации
                                 <a href="" class="reg__title-link">
@@ -167,74 +167,74 @@
                                 </strong>
                             </p>
                         </div>
+                        <form action="" class="reg__form js-regBlock" id="reg-4">
+                            <h2 class="reg__form-title">
+                                Оформить заявку на путевку
+                            </h2>
+                            <div class="reg__form-row">
+                                <div class="reg__form-group">
+                                    <input type="text" class="reg__form-control" placeholder="ФИО родителя">
+                                </div>
+                                <div class="reg__form-group">
+                                    <input type="text" class="reg__form-control" id="phone-mask" placeholder="+ 7 (___) ___ - __ - __">
+                                </div>
+                                <div class="reg__form-group">
+                                    <input type="text" class="reg__form-control" placeholder="Ваш E-mail">
+                                </div>
+                                <div class="reg__form-group reg__form-group_file">
+                                    <div class="reg__form-wrapper">
+                                        <input type="file" name="file" id="file1" class="reg__form-file" data-multiple-caption="{count} files selected" multiple />
+                                        <label for="file1" class="reg__form-filename" id="filename1">Загрузить файл</label>
+                                        <button class="reg__form-reset" type="button" id="reset1">
+                                            <img src="<%=require('@img/reset.png') %>" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="reg__form-top">
+                                        <div class="reg__form-status"><img src="<%=require('@img/reg-form-status.png') %>" alt=""> Св-во о рождении / Паспорт ребенка</div>
+                                    </div>
+                                </div>
+                                <div class="reg__form-group reg__form-group_file">
+                                    <div class="reg__form-wrapper">
+                                        <input type="file" name="file" id="file2" class="reg__form-file" data-multiple-caption="{count} files selected" multiple />
+                                        <label for="file2" class="reg__form-filename" id="filename2">Загрузить файл</label>
+                                        <button class="reg__form-reset" type="button" id="reset2">
+                                            <img src="<%=require('@img/reset.png') %>" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="reg__form-top">
+                                        <div class="reg__form-status"><img src="<%=require('@img/reg-form-status.png') %>" alt=""> Паспорт родителя (главная и рег-ия)</div>
+                                    </div>
+                                </div>
+                                <div class="reg__form-group reg__form-group_file">
+                                    <div class="reg__form-wrapper">
+                                        <input type="file" name="file" id="file3" class="reg__form-file" data-multiple-caption="{count} files selected" multiple />
+                                        <label for="file3" class="reg__form-filename" id="filename3">Загрузить файл</label>
+                                        <button class="reg__form-reset" type="button" id="reset3">
+                                            <img src="<%=require('@img/reset.png') %>" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="reg__form-top">
+                                        <div class="reg__form-status"><img src="<%=require('@img/reg-form-status.png') %>" alt=""> Анкета</div>
+                                        <a href="" class="reg__form-download">
+                                            <img src="<%=require('@img/reg-download.png') %>" alt="">Скачать анкету
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="reg__form-group reg__form-group_submit">
+                                    <button class="reg__form-submit" disabled="disabled">
+                                        Отправить заявку
+                                    </button>
+                                    <div class="reg__form-agree">
+                                        <input type="checkbox" id="agree">
+                                        <label for="agree">При нажатии на кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <form action="" class="reg__form" id="reg-4">
-                        <h2 class="reg__form-title">
-                            Оформить заявку на путевку
-                        </h2>
-                        <div class="reg__form-row">
-                            <div class="reg__form-group">
-                                <input type="text" class="reg__form-control" placeholder="ФИО родителя">
-                            </div>
-                            <div class="reg__form-group">
-                                <input type="text" class="reg__form-control" id="phone-mask" placeholder="+ 7 (___) ___ - __ - __">
-                            </div>
-                            <div class="reg__form-group">
-                                <input type="text" class="reg__form-control" placeholder="Ваш E-mail">
-                            </div>
-                            <div class="reg__form-group reg__form-group_file">
-                                <div class="reg__form-wrapper">
-                                    <input type="file" name="file" id="file1" class="reg__form-file" data-multiple-caption="{count} files selected" multiple />
-                                    <label for="file1" class="reg__form-filename" id="filename1">Загрузить файл</label>
-                                    <button class="reg__form-reset" type="button" id="reset1">
-                                        <img src="<%=require('@img/reset.png') %>" alt="">
-                                    </button>
-                                </div>
-                                <div class="reg__form-top">
-                                    <div class="reg__form-status"><img src="<%=require('@img/reg-form-status.png') %>" alt=""> Св-во о рождении / Паспорт ребенка</div>
-                                </div>
-                            </div>
-                            <div class="reg__form-group reg__form-group_file">
-                                <div class="reg__form-wrapper">
-                                    <input type="file" name="file" id="file2" class="reg__form-file" data-multiple-caption="{count} files selected" multiple />
-                                    <label for="file2" class="reg__form-filename" id="filename2">Загрузить файл</label>
-                                    <button class="reg__form-reset" type="button" id="reset2">
-                                        <img src="<%=require('@img/reset.png') %>" alt="">
-                                    </button>
-                                </div>
-                                <div class="reg__form-top">
-                                    <div class="reg__form-status"><img src="<%=require('@img/reg-form-status.png') %>" alt=""> Паспорт родителя (главная и рег-ия)</div>
-                                </div>
-                            </div>
-                            <div class="reg__form-group reg__form-group_file">
-                                <div class="reg__form-wrapper">
-                                    <input type="file" name="file" id="file3" class="reg__form-file" data-multiple-caption="{count} files selected" multiple />
-                                    <label for="file3" class="reg__form-filename" id="filename3">Загрузить файл</label>
-                                    <button class="reg__form-reset" type="button" id="reset3">
-                                        <img src="<%=require('@img/reset.png') %>" alt="">
-                                    </button>
-                                </div>
-                                <div class="reg__form-top">
-                                    <div class="reg__form-status"><img src="<%=require('@img/reg-form-status.png') %>" alt=""> Анкета</div>
-                                    <a href="" class="reg__form-download">
-                                        <img src="<%=require('@img/reg-download.png') %>" alt="">Скачать анкету
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="reg__form-group reg__form-group_submit">
-                                <button class="reg__form-submit" disabled="disabled">
-                                    Отправить заявку
-                                </button>
-                                <div class="reg__form-agree">
-                                    <input type="checkbox" id="agree">
-                                    <label for="agree">При нажатии на кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a></label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
                 </div>
                 <div class="qa-page__nav-wrapper">
-                    <ul class="qa-page__nav reg-page__nav">
+                    <ul class="qa-page__nav reg-page__nav js-regNav">
                         <li class="qa-page__nav-item">
                             <a href="#reg-1" class="qa-page__nav-link qa-page__nav-link_active">
                                 Дистанционное оформление путевки

@@ -91,8 +91,8 @@ $('.qa__accord-header').click(function () {
 });
 
 jQuery(function ($) {
-    const section = $('.qa__accord-block');
-    const nav = $('.qa-page__nav');
+    const section = $('.js-qaBlock');
+    const nav = $('.js-qaNav');
     let navHeight = nav.outerHeight();
     window.addEventListener('orientationchange', function () {
         navHeight = nav.outerHeight();
@@ -122,6 +122,40 @@ jQuery(function ($) {
         return false;
     });
 });
+
+jQuery(function ($) {
+    const section = $('.js-regBlock');
+    const nav = $('.js-regNav');
+    let navHeight = nav.outerHeight();
+    window.addEventListener('orientationchange', function () {
+        navHeight = nav.outerHeight();
+    }, false);
+    $(window).on('scroll', function () {
+        const position = $(this).scrollTop();
+        section.each(function () {
+            const top = $(this).offset().top - navHeight - 5;
+            const bottom = top + $(this).outerHeight();
+            if (position >= top && position <= bottom) {
+                nav.find('a').removeClass('qa-page__nav-link_active');
+                section.removeClass('active');
+
+                $(this).addClass('active');
+                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('qa-page__nav-link_active');
+            }
+        });
+    });
+
+    nav.find('a').on('click', function () {
+        const id = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top - navHeight,
+        }, 487);
+
+        return false;
+    });
+});
+
 $('#file1').change(function (e) {
     $('#filename1').text(this.files[0].name);
     $('#filename1').addClass('file-select');
