@@ -1734,6 +1734,19 @@ body {
     }
 }
 
+
+.gallery__item_video::before {
+    content: '';
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background: url(../../assets/img/play.png) center no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .programm {
     margin-top: 40px;
     &__item {
