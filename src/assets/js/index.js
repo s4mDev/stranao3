@@ -231,6 +231,9 @@ control3.on({
 
 $('.programm__button--js').click(function () {
     $('body').addClass('open-offer');
+    const ID = $(this).attr('data-formId');
+    console.log(ID);
+    $('#formId').val(ID);
 });
 
 $('.offer-popup__close').click(function () {
@@ -248,6 +251,14 @@ $('#agree').on('change', function () {
         $('.reg__form-submit').attr('disabled', false);
     } else {
         $('.reg__form-submit').attr('disabled', true);
+    }
+});
+
+$('#agree').on('change', function () {
+    if ($('#agree').prop('checked')) {
+        $('.get__form-submit').attr('disabled', false);
+    } else {
+        $('.get__form-submit').attr('disabled', true);
     }
 });
 
